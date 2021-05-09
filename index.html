@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TIC TAC TOE</title>
+
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div id="body">
+            <h1>TIC TAC TOE</h1>
+
+            <!-- Game Instructions -->
+            <p id="instruction">[Game starts by just clicking on a box]</p>
+            <br>
+
+            <!-- Space to show game status -->
+            <p id="game-status"></p>
+            <p id="turn">Player <span id="active-player">X</span>'s turn to play</p>
+            <br><br>
+
+            <!-- 3*3 grid of Boxes -->
+            <div id="grid">
+                <input type="text" id="grid-1" onclick="updateGrid(1)" readonly>
+                <input type="text" id="grid-2" onclick="updateGrid(2)" readonly>
+                <input type="text" id="grid-3" onclick="updateGrid(3)" readonly>
+                <br><br>
+
+                <input type="text" id="grid-4" onclick="updateGrid(4)" readonly>
+                <input type="text" id="grid-5" onclick="updateGrid(5)" readonly>
+                <input type="text" id="grid-6" onclick="updateGrid(6)" readonly>
+                <br><br>
+
+                <input type="text" id="grid-7" onclick="updateGrid(7)" readonly>
+                <input type="text" id="grid-8" onclick="updateGrid(8)" readonly>
+                <input type="text" id="grid-9" onclick="updateGrid(9)" readonly>
+            </div>
+            <!-- Grid end here -->
+            <br><br>
+
+            <!-- Button to reset game -->
+            <button id="reset-btn" onclick="reset()">New Game</button>
+            <br><br>
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+
+</html>
